@@ -8,6 +8,7 @@ set expandtab
 set nohlsearch
 set number
 set encoding=utf-8
+colorscheme solarized
 set background=dark
 syntax on
 filetype indent on
