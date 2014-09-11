@@ -6,7 +6,7 @@ Installation
 First, clone this repo:
 ```
 $ cd $HOME
-$ git clone git@github.com:username/dotfiles.git .dotfiles
+$ git clone git@github.com:fishfacemcgee/dotfiles.git .dotfiles
 ```
 
 Second, set up the `.bash/` sub-modules.
