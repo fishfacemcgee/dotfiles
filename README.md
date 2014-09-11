@@ -1,6 +1,8 @@
 dotfiles
 ========
 
+[This is based loosely off of Justone's Dotfiles repo](https://github.com/justone/dotfiles)
+
 Installation
 =
 First, clone this repo:
