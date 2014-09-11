@@ -1,0 +1,6 @@
+[submodule ".bash/vim-aware-prompt"]
+	path = .bash/vim-aware-prompt
+	url = git@github.com:fishfacemcgee/vim-aware-prompt.git
+[submodule ".bash/git-aware-prompt"]
+	path = .bash/git-aware-prompt
+	url = git@github.com:fishfacemcgee/git-aware-prompt.git
