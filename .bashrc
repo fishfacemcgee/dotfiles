@@ -17,6 +17,7 @@ alias gst='git status'
 alias gm="git merge $1"
 alias grumpass="grunt compass"
 alias gap="git add -p"
+alias gfo="git fetch origin"
 #alias gmm="echo 'first $1 woop'"
 
 function gmm() {
