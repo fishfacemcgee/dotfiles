@@ -16,7 +16,7 @@ au BufReadPost *.tmpl set syntax=html
 au BufReadPost *.tpl set syntax=html
 au BufReadPost *.scss set syntax=css
 au BufReadPost *.coffee set syntax=js
-au BufReadPost *.json set syntax=js
+au BufReadPost *.json set syntax=json
 
 au BufReadPost  *.js        setlocal    tabstop=2 shiftwidth=2 softtabstop=2
 au BufReadPost  *.json      setlocal    tabstop=2 shiftwidth=2 softtabstop=2
@@ -33,5 +33,10 @@ autocmd BufWritePre *.js   :%s/\s\+$//e
 autocmd BufWritePre *.html :%s/\s\+$//e
 
 if exists("+colorcolumn")
-    set colorcolumn=81
+    set colorcolumn=121
 endif
+
+autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
