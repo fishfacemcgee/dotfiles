@@ -18,6 +18,8 @@ alias gm="git merge $1"
 alias grumpass="grunt compass"
 alias gap="git add -p"
 alias gfo="git fetch origin"
+alias cleanrepo='git clean -x -f -d -e "*agrant*"'
+alias deletebranch='git branch -D'
 #alias gmm="echo 'first $1 woop'"
 
 function gmm() {
