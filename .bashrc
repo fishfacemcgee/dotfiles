@@ -38,6 +38,10 @@ source $VIMAWAREPROMPT/main.sh
 #export PS1="[\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$vim_runtime]$ "
 export PS1="[\u@\h \W\[$txtcyn\]\$git_branch\[$txtylw\]\$vim_runtime\[$txtrst\]\[$txtred\]\$git_dirty\[$txtrst\]]$ "
 
+if [ -d ~/Library/Python/3.7 ]; then
+    export PATH=~/Library/Python/3.7/bin:$PATH
+fi
+
 # Set up WSL Env Variable for WSL if running there
 if grep -sq Microsoft /proc/version; then
     export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
