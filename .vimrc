@@ -9,6 +9,7 @@ set nohlsearch
 set number
 set encoding=utf-8
 set background=dark
+colorscheme solarized
 syntax on
 filetype indent on
 au BufWritePost *.php !php -l %
