@@ -100,8 +100,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval `dircolors ~/.dircolors`
-export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64
-export PATH=$PATH:/usr/local/cuda-11.8/lib64
+#eval `dircolors ~/.dircolors`
+if whence dircolors >/dev/null; then
+  eval "$(dircolors -b)"
+  zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+  alias ls='ls --color'
+else
+  export CLICOLOR=1
+  zstyle ':completion:*:default' list-colors ''
+fi
 alias gcm="git commit -m"
 alias gpo="git push origin"
